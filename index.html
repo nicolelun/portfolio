@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nicole Lun</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/filter.js"></script>
+
+</head>
+<body class="index">
+
+	<!-- <header class="w3-top">
+		<div class="w3-row" id="nav-container">
+			<div class="w3-col w3-text-light-grey" id="identity">
+				<a href="index.html">Nicole Lun</a>
+			</div>
+			<div class="w3-rest" id="main-nav">
+				<ul class="w3-navbar w3-black w3-right">
+					<li><a class="w3-hover-khaki w3-orange" href="index.html">Work</a></li>
+					<li><a class="w3-hover-khaki" href="contact.html">Contact</a></li>
+				</ul>
+		  	</div>
+		</div>
+		<div class="w3-row w3-hide-small" id="filter-container">
+			<ul class="w3-navbar w3-right filter">
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="video-btn">Video</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="photo-btn">Photo</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="web-btn">Web</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="print-btn">Print</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="other-btn">Other</li>
+			</ul>
+		</div>
+		<div class="w3-row w3-hide-large w3-hide-medium" id="filter-icon-container">
+			<ul class="w3-navbar w3-right filter">
+				<li class="w3-opennav w3-black w3-right" id="filter-menu-btn">
+				    <a href="javascript:void(0);" onclick="showFilterIcon()">☰</a>
+				</li>
+			</ul>
+		</div>
+		<div class="w3-hide w3-hide-large w3-hide-medium" id="filter-container-s">
+		  	<ul class="w3-navbar w3-large w3-black">
+		    	<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="video-btn-s">Video</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="photo-btn-s">Photo</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="web-btn-s">Web</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="print-btn-s">Print</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="other-btn-s">Other</li>
+		  	</ul>
+		</div>
+	</header> -->
+
+	<header class="w3-top">
+		<div class="w3-row buffered-sides" id="nav-container">
+			<div class="w3-col w3-text-light-grey" id="identity">
+				<a href="index.html">Nicole Lun</a>
+			</div>
+			<div class="w3-rest" id="main-nav">
+				<ul class="w3-navbar w3-black w3-right">
+					<li><a class="w3-hover-khaki w3-orange" href="index.html">Work</a></li>
+					<li><a class="w3-hover-khaki" href="contact.html">Contact</a></li>
+				</ul>
+		  	</div>
+		</div>
+		<div class="w3-row w3-hide-small buffered-sides" id="filter-large">
+			<ul class="w3-navbar w3-right">
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="video-btn">Video</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="photo-btn">Photo</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="web-btn">Web</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="print-btn">Print</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="other-btn">Other</li>
+			</ul>
+		</div>
+		<div class="w3-row w3-hide-large w3-hide-medium buffered-sides">
+			<ul class="w3-navbar w3-right">
+				<li class="w3-opennav w3-black w3-right" id="filter-menu-btn">
+				    <a href="javascript:void(0);" onclick="showFilterIcon()">☰</a>
+				</li>
+			</ul>
+		</div>
+		<div class="w3-row w3-hide w3-hide-large w3-hide-medium buffered-sides" id="filter-small">
+		  	<ul class="w3-navbar w3-large w3-black">
+		    	<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="video-btn-s">Video</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="photo-btn-s">Photo</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="web-btn-s">Web</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="print-btn-s">Print</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="other-btn-s">Other</li>
+		  	</ul>
+		</div>
+	</header>
+
+	<div class="w3-row w3-hide-small" id="buffer-large"></div>
+	<div class="w3-row w3-hide-large w3-hide-medium" id="buffer-small"></div>
+	<!-- <div style="min-height: 300px"></div> -->
+
+	<div class="w3-row">
+		<!-- <div class="w3-col l2 m3 s6 tile print" id="receipts">
+			<div class="tile-header">Receipts: 1830 to 1865</div>
+			<img class="grayscale" src="">
+		</div> -->
+		<a href="globe.html">
+			<div class="w3-col l2 m3 s6 tile tint video" id="globe">
+				<div class="tile-header">Globe<br><span class="medium">Light Installation</span></div>
+				<img class="grayscale" src="images/globe/Globe.00_00_34_17.Still008_500x333.jpg">
+			</div>
+		</a>
+		<a href="look.html">
+			<div class="w3-col l2 m3 s6 tile tint video" id="look">
+				<div class="tile-header">How Do I Look?<br><span class="medium">Video</span></div>
+				<img class="grayscale" src="images/look/TitanicJacks_08.00_00_09_24.Still001_800x533.jpg">
+			</div>
+		</a>
+		<a href="waiting.html">
+			<div class="w3-col l2 m3 s6 tile tint video" id="waiting">
+				<div class="tile-header">Waiting for Midnight<br><span class="medium">Video</span></div>
+				<img class="grayscale" src="images/waiting/Waiting_10.00_01_06_03.Still002_800x533.jpg">
+			</div>
+		</a>
+		<a href="labyrinth.html">
+			<div class="w3-col l2 m3 s6 tile tint" id="labyrinth">
+				<div class="tile-header">Labyrinth<br><span class="medium">Installation 
+				Concept</span></div>
+				<img class="grayscale" src="images/labyrinth/IMG_1844_800x533.jpg">
+			</div>
+		</a>
+		<a href="soundscapes.html">
+			<div class="w3-col l2 m3 s6 tile tint web" id="soundscapes">
+				<div class="tile-header">Soundscapes<br><span class="medium">Web</span></div>
+				<img class="grayscale" src="images/soundscapes/ScreenShot_2016-06-03_10.12.19AM_537x300.png">
+			</div>
+		</a>
+		<a href="street.html">
+			<div class="w3-col l2 m3 s6 tile tint photo" id="street">
+				<div class="tile-header">Street<br><span class="medium">Photo</span></div>
+				<img class="grayscale" src="images/bangladesh/IMG_8774_800x534.jpg">
+			</div>
+		</a>
+		<a href="triptych.html">
+			<div class="w3-col l2 m3 s6 tile tint print" id="triptych">
+				<div class="tile-header">Triptych<br><span class="medium">Print</span></div>
+				<img class="grayscale" src="images/triptych/Virgin-Mary-Head_500x333.jpg">
+			</div>
+		</a>
+		<a href="lawndale.html">
+			<div class="w3-col l2 m3 s6 tile tint photo" id="lawndale">
+				<div class="tile-header">North Lawndale<br><span class="medium">Photo</span></div>
+				<img class="grayscale" src="images/lawndale/IMG_1469_800x533.jpg">
+			</div>
+		</a>
+		<a href="abstract.html">
+			<div class="w3-col l2 m3 s6 tile tint photo" id="abstract">
+				<div class="tile-header">Abstract<br><span class="medium">Photo</span></div>
+				<img class="grayscale" src="images/abstract/IMG_6909_800x533.jpg">
+			</div>
+		</a>
+		<a href="window.html">
+			<div class="w3-col l2 m3 s6 tile tint video" id="window">
+				<div class="tile-header">Window<br><span class="medium">Video installation</span></div>
+				<img class="grayscale" src="images/window/IMG_4521_600x800.jpg">
+			</div>
+		</a>
+		<a href="light-installation.html">
+			<div class="w3-col l2 m3 s6 tile tint video" id="light-installation">
+				<div class="tile-header">Light Installation<br><span class="medium">Light Installation</span></div>
+				<img class="grayscale" src="images/light-installation/MVI_1614.00_01_18_28.Still001_800x533.jpg">
+			</div>
+		</a>
+		<a href="siphon.html">
+			<div class="w3-col l2 m3 s6 tile tint print" id="siphon">
+				<div class="tile-header">Siphon<br><span class="medium">Publication</span></div>
+				<img class="grayscale" src="images/siphon/IMG_0640_800x533.jpg">
+			</div>
+		</a>
+		<a href="bottle.html">
+			<div class="w3-col l2 m3 s6 tile tint package other" id="bottle">
+				<div class="tile-header">Bottle<br><span class="medium">Package</span></div>
+				<!-- <img class="grayscale" style="transform: translate(-17%, -15%);" src="images/bottle/IMG_1872_800x640.jpg"> -->
+				<img class="grayscale" src="images/bottle/IMG_1872_800x640.jpg">
+			</div>
+		</a>
+		<a href="box.html">
+			<div class="w3-col l2 m3 s6 tile tint package other" id="box">
+				<div class="tile-header">Unity Box<br><span class="medium">Package</span></div>
+				<!-- <img class="grayscale" style="transform: translate(-17%, -5%);" src="images/box/IMG_1715_800x533_PureWhite.jpg"> -->
+				<img class="grayscale" src="images/box/IMG_1715_800x533_PureWhite.jpg">
+			</div>
+		</a>
+		<a href="wagashi.html">
+			<div class="w3-col l2 m3 s6 tile tint package other" id="wagashi">
+				<div class="tile-header">Wagashi<br><span class="medium">Package</span></div>
+				<!-- <img class="grayscale" style="transform: translate(-17%, -10%);" src="images/wagashi/IMG_2050_800x533.jpg"> -->
+				<img class="grayscale" src="images/wagashi/IMG_2050_800x533.jpg">
+			</div>
+		</a>
+		<a href="nssmusa.html">
+			<div class="w3-col l2 m3 s6 tile tint print" id="still">
+				<div class="tile-header">NSSMUSA + SAIC Exhibition<br><span class="medium">Print</span></div>
+				<img class="grayscale" src="images/nssmusa/IMG_1975_MedLight_800x533.jpg">
+			</div>
+		</a>
+		<a href="mcs.html">
+			<div class="w3-col l2 m3 s6 tile tint web" id="mcs">
+				<div class="tile-header">MCS<br><span class="medium">Web</span></div>
+				<!-- <img class="grayscale" style="transform: translate(-5%, 0%);" src="images/mcs/MCS-Website_Page-1_800x533.jpg"> -->
+				<img class="grayscale" src="images/mcs/MCS-Website_Page-1_726x484.jpg">
+			</div>
+		</a>
+		<a href="yangtze.html">
+			<div class="w3-col l2 m3 s6 tile tint photo" id="yangtze">
+				<div class="tile-header">Yangtze River<br><span class="medium">Photo</span></div>
+				<!-- <img class="grayscale" style="transform: translate(-25%, -15%);" src="images/yangtze/IMG_6556_500x333.jpg"> -->
+				<img class="grayscale" src="images/yangtze/IMG_6556_500x333.jpg">
+			</div>
+		</a>
+		<a href="landscape.html">
+			<div class="w3-col l2 m3 s6 tile tint photo" id="landscape">
+				<div class="tile-header">Landscape<br><span class="medium">Photo</span></div>
+				<!-- <img class="grayscale" src="images/alaska/DSCN2412_Upright_800x533.jpg"> -->
+				<img class="grayscale" src="images/alaska/DSCN2183_800x534.jpg">
+			</div>
+		</a>
+		
+		<!-- <a href="grandparents.html">
+			<div class="w3-col l2 m3 s6 tile tint print" id="grandparents">
+				<div class="tile-header">Grandparents<br><span class="medium">Print</span></div>
+				<img class="grayscale" src="images/grandparents/Mah-Mah_Cropped_800x533.jpg">
+			</div>
+		</a> -->
+		<a href="dump.html">
+			<div class="w3-col l2 m3 s6 tile tint sound other" id="dump">
+				<div class="tile-header">Just One Word<br><span class="medium">Sound</span></div>
+				<img class="grayscale" src="images/dump/Elizabeth-Taylor-Virginia_800x450.jpg">
+			</div>
+		</a>
+		<a href="odyssey.html">
+			<div class="w3-col l2 m3 s6 tile tint sound other" id="odyssey">
+				<div class="tile-header">Odyssey<br><span class="medium">Sound</span></div>
+				<img class="grayscale" src="images/odyssey/IMG_9995_400x267.jpg">
+			</div>
+		</a>
+		<a href="still.html">
+			<div class="w3-col l2 m3 s6 tile tint photo" id="still">
+				<div class="tile-header">Still Life<br><span class="medium">Photo</span></div>
+				<img class="grayscale" src="images/still/IMG_2519_500x333.jpg">
+			</div>
+		</a>
+		
+		<!-- <a href="prince.html">
+			<div class="w3-col l2 m3 s6 tile tint print" id="prince">
+				<div class="tile-header">Prince<br><span class="medium">Print</span></div>
+				<img class="grayscale" src="images/prince/IMG_0892_800x533_80.jpg">
+			</div>
+		</a> -->
+
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nicole Lun</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/filter.js"></script>
+	<script src="js/main.js"></script>
+
+</head>
+<body>
+
+	<header>
+		<div class="w3-row buffered-sides" id="nav-container">
+			<div class="w3-col w3-text-light-grey" id="identity">
+				<a href="index.html">Nicole Lun</a>
+			</div>
+			<div class="w3-rest" id="main-nav">
+				<ul class="w3-navbar w3-black w3-right">
+					<li><a class="w3-hover-khaki w3-orange" href="index.html">Work</a></li>
+					<li><a class="w3-hover-khaki" href="contact.html">Contact</a></li>
+				</ul>
+		  	</div>
+		</div>
+		<div class="w3-row w3-hide-small buffered-sides" id="filter-large">
+			<ul class="w3-navbar w3-right">
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="video-btn">Video</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="photo-btn">Photo</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="web-btn">Web</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="print-btn">Print</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="other-btn">Other</li>
+			</ul>
+		</div>
+		<div class="w3-row w3-hide-large w3-hide-medium buffered-sides">
+			<ul class="w3-navbar w3-right">
+				<li class="w3-opennav w3-black w3-right" id="filter-menu-btn">
+				    <a href="javascript:void(0);" onclick="showFilterIcon()">☰</a>
+				</li>
+			</ul>
+		</div>
+		<div class="w3-row w3-hide w3-hide-large w3-hide-medium buffered-sides" id="filter-small">
+		  	<ul class="w3-navbar w3-large w3-black">
+		    	<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="video-btn-s">Video</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="photo-btn-s">Photo</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="web-btn-s">Web</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="print-btn-s">Print</li>
+				<li class="w3-btn w3-text-light-grey w3-hover-text-orange filter-btn" id="other-btn-s">Other</li>
+		  	</ul>
+		</div>
+	</header>
+
+	<div class="w3-row buffered-container">
+		<div class="w3-col l8 m8 s12">
+			<h1>Globe</h1>
+			<p>
+				Digital light projection on a glass sphere.
+			</p>
+			<hr>
+		</div>
+	</div>
+	<div class="w3-row buffered-container">
+		<div class="video-container">
+			<div class="video-wrapper">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/fvSOx0iXtvQ" frameborder="0" allowfullscreen>
+				</iframe>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
