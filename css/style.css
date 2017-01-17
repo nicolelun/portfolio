@@ -200,7 +200,7 @@ button.prev {
 	max-height: 200px;
 	cursor: pointer;
 	overflow: hidden;
-	border: 3px solid black;
+	border: 1px solid black;
 }
 
 .tile img {
