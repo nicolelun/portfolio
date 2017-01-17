@@ -25,12 +25,12 @@
 	<header>
 		<div class="w3-row buffered-sides" id="nav-container">
 			<div class="w3-col w3-text-light-grey" id="identity">
-				<a href="index.html">Nicole Lun</a>
+				<a class="light-grey-text" href="index.html">Nicole Lun</a>
 			</div>
 			<div class="w3-rest" id="main-nav">
 				<ul class="w3-navbar w3-black w3-right">
 					<li><a class="w3-hover-khaki w3-orange" href="index.html">Work</a></li>
-					<li><a class="w3-hover-khaki" href="contact.html">Contact</a></li>
+					<li><a class="w3-hover-khaki light-grey-text" href="contact.html">Contact</a></li>
 				</ul>
 		  	</div>
 		</div>
@@ -62,67 +62,71 @@
 	</header>
 	
 	<div class="w3-row">
-		<div class="w3-col l8 m8 s12b buffered-container">
+		<div class="w3-col l3 m12 s12 buffered-container">
 			<h1>Still Life Photography</h1>
 			<hr>
+			<p>
+				<button class="w3-btn w3-text-grey w3-hover-none w3-hover-text-orange prev">&#10094; Previous</button>
+				<button class="w3-btn w3-text-grey w3-hover-none w3-hover-text-orange w3-right next">Next &#10095;</button>
+			</p>
 		</div>
-	</div>
 	
-	<div class="w3-row buffered-container">	
-		<div class="slideshow">
+		<div class="w3-col l9 m12 s12 buffered-container">	
+			<div class="slideshow">
 
-	    	<!-- window blind -->
-	        <img src="images/still/IMG_7178_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+		    	<!-- window blind -->
+		        <img src="images/still/IMG_7178_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
 
-			<!-- magazines -->
-	        <img src="images/still/IMG_3276_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+				<!-- magazines -->
+		        <img src="images/still/IMG_3276_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
 
-	    	<!-- water -->
-	        <img src="images/still/IMG_3567_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+		    	<!-- water -->
+		        <img src="images/still/IMG_3567_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
 
-			<!-- window drape -->
-	        <img src="images/still/IMG_4707_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+				<!-- window drape -->
+		        <img src="images/still/IMG_4707_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
 
-			<!-- coffee -->
-			<!-- <img src="images/still/IMG_3203_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
+				<!-- coffee -->
+				<!-- <img src="images/still/IMG_3203_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
 
-			<!-- party snaps -->
-	        <img src="images/still/IMG_2713_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+				<!-- party snaps -->
+		        <img src="images/still/IMG_2713_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
 
-	    	<!-- fence -->
-	        <!-- <img src="images/still/IMG_3048_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
+		    	<!-- fence -->
+		        <!-- <img src="images/still/IMG_3048_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
 
-	    	<!-- glass wall -->
-	        <!-- <img src="images/still/219_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
+		    	<!-- glass wall -->
+		        <!-- <img src="images/still/219_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
 
-	    	<!-- pots -->
-	        <img src="images/still/IMG_2519_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+		    	<!-- pots -->
+		        <img src="images/still/IMG_2519_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
 
-	   	 	<!-- flower lights -->
-	        <img src="images/still/IMG_2510_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
-	    	
-	    	<!-- lamp -->
-	        <img src="images/still/001_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+		   	 	<!-- flower lights -->
+		        <img src="images/still/IMG_2510_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+		    	
+		    	<!-- lamp -->
+		        <img src="images/still/001_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
 
-	    	<!-- tapas -->
-	        <img src="images/still/045_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+		    	<!-- tapas -->
+		        <img src="images/still/045_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
 
-	        <!-- doll -->
-	        <img src="images/still/IMG_0581_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+		        <!-- doll -->
+		        <img src="images/still/IMG_0581_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
 
-			<!-- fan -->
-			<!-- <img src="images/still/IMG_9744_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
+				<!-- fan -->
+				<!-- <img src="images/still/IMG_9744_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
 
-	    	<div class="caption"></div>
-			<div class="slide-number"></div>
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		    	<div class="caption"></div>
+				<div class="slide-number"></div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-	    </div>
+		    </div>
+		</div>
 	</div>
 
 	<div class="w3-row buffered-container" id="footer">
-		<button class="w3-btn w3-right w3-text-light-grey w3-hover-none w3-hover-text-orange" id="top-btn">Back to Top</button>
+		<button class="w3-btn w3-text-grey w3-hover-none w3-hover-text-orange top">Back to Top</button>
 	</div>
 
 	<script type="text/javascript" src="js/still-data.js"></script>

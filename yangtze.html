@@ -25,12 +25,12 @@
 	<header>
 		<div class="w3-row buffered-sides" id="nav-container">
 			<div class="w3-col w3-text-light-grey" id="identity">
-				<a href="index.html">Nicole Lun</a>
+				<a class="light-grey-text" href="index.html">Nicole Lun</a>
 			</div>
 			<div class="w3-rest" id="main-nav">
 				<ul class="w3-navbar w3-black w3-right">
 					<li><a class="w3-hover-khaki w3-orange" href="index.html">Work</a></li>
-					<li><a class="w3-hover-khaki" href="contact.html">Contact</a></li>
+					<li><a class="w3-hover-khaki light-grey-text" href="contact.html">Contact</a></li>
 				</ul>
 		  	</div>
 		</div>
@@ -62,90 +62,94 @@
 	</header>
 	
 	<div class="w3-row">
-		<div class="w3-col l8 m8 s12b buffered-container">
+		<div class="w3-col l3 m12 s12 buffered-container">
 			<h1>Yangtze River</h1>
 			<hr>
+			<p>
+				<button class="w3-btn w3-text-grey w3-hover-none w3-hover-text-orange prev">&#10094; Previous</button>
+				<button class="w3-btn w3-text-grey w3-hover-none w3-hover-text-orange w3-right next">Next &#10095;</button>
+			</p>
+		</div>
+
+		<div class="w3-col l9 m12 s12 buffered-container">
+			<div class="slideshow">
+
+			    <!-- boats down gorge -->
+			    <img src="images/yangtze/IMG_6556_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+
+				<!-- cliff left -->
+			    <img src="images/yangtze/IMG_6214_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+
+				<!-- pagoda -->
+			    <img src="images/yangtze/IMG_5737_1600x989.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+
+			    <!-- boat passing pagoda -->
+			    <img src="images/yangtze/IMG_5743_1600x989.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+
+			    <!-- fishing nets and blue boat -->
+			    <img src="images/yangtze/IMG_6116_1600x989.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+				
+				<!-- fishing nets and blue boat and houses on hill -->
+			    <img src="images/yangtze/IMG_5987_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+
+				<!-- cliff right -->
+			    <img src="images/yangtze/IMG_5824_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+
+				<!-- row of white houses -->
+				<img src="images/yangtze/IMG_6033_1600x989.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+
+				<!-- white houses and blue boat -->
+			    <img src="images/yangtze/IMG_6189_1600x989.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+
+				<!-- dark village -->
+			    <!-- <img src="images/yangtze/IMG_6457_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
+			    
+			    <!-- cluster of white houses -->
+			    <!-- <img src="images/yangtze/IMG_6506_1600x989.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
+
+				<!-- approaching 175M -->
+				<img src="images/yangtze/IMG_6009_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+
+				<!-- 175M -->
+			    <img src="images/yangtze/IMG_6017_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+
+				<!-- house on cliff -->
+			    <!-- <img src="images/yangtze/IMG_6183_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
+				<!-- cleaning boat Three Gorges Dam -->
+			    <!-- <img src="images/yangtze/IMG_6347_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
+
+				<!-- workers Three Gorgest Dam -->
+			    <img src="images/yangtze/IMG_6350_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+
+				<!-- men on boat -->
+			    <img src="images/yangtze/IMG_6678_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+
+			   	<!-- Three Gorges Dam -->
+			    <img src="images/yangtze/IMG_6346_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+
+				<!-- row of deck chairs -->
+			    <!-- <img src="images/yangtze/IMG_6607_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
+
+				<!-- chair -->
+				<!-- <img src="images/yangtze/IMG_6685_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
+				
+				<!-- unfinished bridge -->
+			    <!-- <img src="images/yangtze/IMG_5630_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
+
+				<!-- boat across broad river -->
+			    <img src="images/yangtze/IMG_6604_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
+
+				<div class="caption"></div>
+				<div class="slide-number"></div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		   
+		    </div>
 		</div>
 	</div>
 
-	<div class="w3-row buffered-container">
-		<div class="slideshow">
-
-		    <!-- boats down gorge -->
-		    <img src="images/yangtze/IMG_6556_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
-
-			<!-- cliff left -->
-		    <img src="images/yangtze/IMG_6214_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
-
-			<!-- pagoda -->
-		    <img src="images/yangtze/IMG_5737_1600x989.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
-
-		    <!-- boat passing pagoda -->
-		    <img src="images/yangtze/IMG_5743_1600x989.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
-
-		    <!-- fishing nets and blue boat -->
-		    <img src="images/yangtze/IMG_6116_1600x989.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
-			
-			<!-- fishing nets and blue boat and houses on hill -->
-		    <img src="images/yangtze/IMG_5987_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
-
-			<!-- cliff right -->
-		    <img src="images/yangtze/IMG_5824_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
-
-			<!-- row of white houses -->
-			<img src="images/yangtze/IMG_6033_1600x989.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
-
-			<!-- white houses and blue boat -->
-		    <img src="images/yangtze/IMG_6189_1600x989.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
-
-			<!-- dark village -->
-		    <!-- <img src="images/yangtze/IMG_6457_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
-		    
-		    <!-- cluster of white houses -->
-		    <!-- <img src="images/yangtze/IMG_6506_1600x989.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
-
-			<!-- approaching 175M -->
-			<img src="images/yangtze/IMG_6009_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
-
-			<!-- 175M -->
-		    <img src="images/yangtze/IMG_6017_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
-
-			<!-- house on cliff -->
-		    <!-- <img src="images/yangtze/IMG_6183_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
-			<!-- cleaning boat Three Gorges Dam -->
-		    <!-- <img src="images/yangtze/IMG_6347_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
-
-			<!-- workers Three Gorgest Dam -->
-		    <img src="images/yangtze/IMG_6350_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
-
-			<!-- men on boat -->
-		    <img src="images/yangtze/IMG_6678_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
-
-		   	<!-- Three Gorges Dam -->
-		    <img src="images/yangtze/IMG_6346_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
-
-			<!-- row of deck chairs -->
-		    <!-- <img src="images/yangtze/IMG_6607_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
-
-			<!-- chair -->
-			<!-- <img src="images/yangtze/IMG_6685_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
-			
-			<!-- unfinished bridge -->
-		    <!-- <img src="images/yangtze/IMG_5630_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)"> -->
-
-			<!-- boat across broad river -->
-		    <img src="images/yangtze/IMG_6604_1600x1067.jpg" alt="" class="slide-img" onclick="plusSlides(1)">
-
-			<div class="caption"></div>
-			<div class="slide-number"></div>
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-	   
-	    </div>
-	</div>
-
 	<div class="w3-row buffered-container" id="footer">
-		<button class="w3-btn w3-right w3-text-light-grey w3-hover-none w3-hover-text-orange" id="top-btn">Back to Top</button>
+		<button class="w3-btn w3-text-grey w3-hover-none w3-hover-text-orange top">Back to Top</button>
 	</div>
 
 	<script type="text/javascript" src="js/slideshow.js"></script>
