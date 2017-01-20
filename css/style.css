@@ -148,7 +148,7 @@ body {
  	padding-bottom: 10px;
 }
 
-.index #filter-large {
+.index #filter-large, .contact #filter-large {
 	background-color: rgba(48,48,48,0.7);
 }
 
