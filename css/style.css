@@ -24,13 +24,13 @@ header {
 h1 {
 	font-family: "Muli", sans-serif;
 	font-size: 26px;
-	color: rgba(31,232,255,0.75);
+	color: rgba(31,232,255,0.8);
 	margin-top: 0;
 }
 
 a {
 	text-decoration: none;
-	color: rgba(31,232,255,0.75);
+	color: rgba(31,232,255,0.6);
 }
 
 hr {
@@ -116,7 +116,10 @@ hr {
 }
 
 body {
-	color: #F1F1F1;
+	/*color: #3a3a3;*/
+	/*color: #F1F1F1;*/
+	/*color: #757575;*/
+	color: #9e9e9e;
 }
 
 .khaki-text {
@@ -148,9 +151,14 @@ body {
  	padding-bottom: 10px;
 }
 
-.index #filter-large, .contact #filter-large {
+.index #filter-large,
+.contact #filter-large {
 	background-color: rgba(48,48,48,0.7);
 }
+
+/*.contact #filter-large {
+	background-color: rgba(48,48,48,1);
+}*/
 
 #filter-large {
 	margin-bottom: 16px;
