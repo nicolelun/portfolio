@@ -416,6 +416,9 @@ button.prev {
 	  	width: 800px;
 		height: 533px;
   	}
+  	.tile img {
+  		transform: translateX(-10%);
+  	}
 }
 
 /* Break point for w3ss medium is 992 */
@@ -425,6 +428,9 @@ button.prev {
 		width: 800px;
 		height: 533px;
 	}
+	.tile img {
+  		transform: translateX(-8%);
+  	}
 }
 
 /* Small Devices, Tablets */
@@ -433,6 +439,9 @@ button.prev {
 		width: 708px;
 		height: 472px;
 	}
+	.tile img {
+  		transform: translateX(-8%);
+  	}
 }
 
 /* Break point for w3css small is 600 */
@@ -441,6 +450,9 @@ button.prev {
 		width: 600px;
 		height: 400px;
 	}
+	.tile img {
+  		transform: none;
+  	}
 }
 
 /* Extra Small Devices, Phones */ 
@@ -449,11 +461,16 @@ button.prev {
 		width: 450px;
 		height: 300px;
 	}
+	.tile img {
+  		transform: none;
+  	}
 }
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
-
+	.tile img {
+  		transform: none;
+  	}
 }
 
 /*==========  End Non-Mobile First Method  ==========*/
