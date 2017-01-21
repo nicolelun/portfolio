@@ -79,7 +79,7 @@ hr {
 }
 
 #buffer-large {
-	min-height: 123px;
+	min-height: 120px;
 	/*min-height: 128px;*/
 }
 
@@ -165,9 +165,10 @@ hr {
 	background-color: rgba(48,48,48,0.7);
 }
 
-/*.contact #filter-large {
+.contact #filter-large {
 	background-color: rgba(48,48,48,1);
-}*/
+	padding-bottom: 16px;
+}
 
 #filter-large {
 	margin-bottom: 16px;
