@@ -411,7 +411,13 @@ button.prev {
 /*==========  Mediq Queries  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1441px) {
+
+/*@media
+screen and (-webkit-min-device-pixel-ratio: 1.5),
+screen and (-moz-min-device-pixel-ratio: 1.5),
+screen and (min-device-pixel-ratio: 1.5)*/ 
+@media  only screen and (min-device-pixel-ratio: 2), 
+    only screen and (min-resolution: 192dpi) {
 	.slideshow, 
 	.slideshow-test {
 		max-width: 1000px;
