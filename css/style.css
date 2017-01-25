@@ -416,8 +416,9 @@ button.prev {
 screen and (-webkit-min-device-pixel-ratio: 1.5),
 screen and (-moz-min-device-pixel-ratio: 1.5),
 screen and (min-device-pixel-ratio: 1.5)*/ 
-@media  only screen and (min-device-pixel-ratio: 2) and (min-width: 1441px), 
-    only screen and (min-resolution: 192dpi) and (min-width: 1441px) {
+/*@media only screen and (min-device-pixel-ratio: 2) and (min-width: 1441px), 
+    only screen and (min-resolution: 192dpi) and (min-width: 1441px)*/
+@media only screen and (min-width: 1441px) {
 	.slideshow, 
 	.slideshow-test {
 		max-width: 1000px;
@@ -435,7 +436,7 @@ screen and (min-device-pixel-ratio: 1.5)*/
 	}
 }
 
-@media only screen and (max-width : 1440px) {
+@media only screen and (max-width: 1440px) {
 	.slideshow img, .slide-test img {
 	  	width: 800px;
 		height: 533px;
@@ -447,7 +448,7 @@ screen and (min-device-pixel-ratio: 1.5)*/
 
 /* Break point for w3ss medium is 992 */
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
 	.slideshow img, .slide-test img {
 		width: 800px;
 		height: 533px;
@@ -458,7 +459,7 @@ screen and (min-device-pixel-ratio: 1.5)*/
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width: 768px) {
 	.slideshow img, .slide-test img {
 		width: 708px;
 		height: 472px;
@@ -480,7 +481,7 @@ screen and (min-device-pixel-ratio: 1.5)*/
 }
 
 /* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width: 480px) {
 	.slideshow img, .slide-test img {
 		width: 450px;
 		height: 300px;
@@ -491,7 +492,7 @@ screen and (min-device-pixel-ratio: 1.5)*/
 }
 
 /* Custom, iPhone Retina */ 
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width: 320px) {
 	.tile img {
   		transform: none;
   	}
