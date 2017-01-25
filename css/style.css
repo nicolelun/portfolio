@@ -416,8 +416,8 @@ button.prev {
 screen and (-webkit-min-device-pixel-ratio: 1.5),
 screen and (-moz-min-device-pixel-ratio: 1.5),
 screen and (min-device-pixel-ratio: 1.5)*/ 
-@media  only screen and (min-device-pixel-ratio: 2), 
-    only screen and (min-resolution: 192dpi) {
+@media  only screen and (min-device-pixel-ratio: 2) and (min-width: 1441px), 
+    only screen and (min-resolution: 192dpi) and (min-width: 1441px) {
 	.slideshow, 
 	.slideshow-test {
 		max-width: 1000px;
@@ -427,10 +427,8 @@ screen and (min-device-pixel-ratio: 1.5)*/
 		height: 667px;
   	}
 	.tile img {
-		/*width: 500px;
-		height: 333px;*/
-		width: 800px;
-		height: 533px;
+		width: 400px;
+		height: 267px;
 		transform: none;
 	}
 }
