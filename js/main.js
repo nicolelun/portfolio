@@ -12,6 +12,7 @@ function screenWidth() {
 
 $(document).ready(function() {
     var caseList = [
+    'desk.html',
     'window.html',
     'light-installation.html',
     'globe.html',
