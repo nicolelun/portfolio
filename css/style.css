@@ -412,19 +412,20 @@ button.prev {
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 2881px) {
+	.slideshow, 
+	.slideshow-test {
+		max-width: 1000px;
+	}
 	.slideshow img, .slide-test img {
 	  	width: 1000px;
 		height: 667px;
   	}
-	.tile {
-		height: 25vh;
-		max-height: 400px;
-	}
 	.tile img {
 		/*width: 500px;
 		height: 333px;*/
 		width: 800px;
 		height: 533px;
+		transform: none;
 	}
 }
 
