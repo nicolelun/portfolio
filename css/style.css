@@ -213,9 +213,9 @@ button.prev {
 
 .tile {
 	position: relative;
-	height: 25%;
+	height: 25vh;
 	min-height: 200px;	
-	max-height: 300px;
+	max-height: 400px;
 	cursor: pointer;
 	overflow: hidden;
 	border: 1px solid black;
@@ -408,7 +408,7 @@ button.prev {
 	margin-bottom: 0px;
 }
 
-/*==========  Non-Mobile First Method  ==========*/
+/*==========  Mediq Queries  ==========*/
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 2881px) {
@@ -416,9 +416,15 @@ button.prev {
 	  	width: 1000px;
 		height: 667px;
   	}
+	.tile {
+		height: 25vh;
+		max-height: 400px;
+	}
 	.tile img {
-		width: 500px;
-		height: 333px;
+		/*width: 500px;
+		height: 333px;*/
+		width: 800px;
+		height: 533px;
 	}
 }
 
