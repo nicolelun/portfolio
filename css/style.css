@@ -428,8 +428,7 @@ button.prev {
 
 /*==========  Mediq Queries  ==========*/
 
-/* Large Devices, Wide Screens */
-
+/* Extra Large Devices, e.g., iMac Retina */
 /*@media
 screen and (-webkit-min-device-pixel-ratio: 1.5),
 screen and (-moz-min-device-pixel-ratio: 1.5),
@@ -465,6 +464,7 @@ screen and (min-device-pixel-ratio: 1.5)*/
 	}
 }
 
+/* Large Devices, Wide Screens, e.g., Macbook */
 @media only screen and (max-width: 1440px) {
 	.slideshow, 
 	.slideshow-test {
@@ -479,6 +479,7 @@ screen and (min-device-pixel-ratio: 1.5)*/
   	}
 }
 
+/* Between Large and Medium Devices */
 @media only screen and (max-width: 1100px) {
 	.slideshow, 
 	.slideshow-test {
@@ -494,7 +495,7 @@ screen and (min-device-pixel-ratio: 1.5)*/
 }
 
 /* Break point for w3ss medium is 992 */
-/* Medium Devices, Desktops */
+/* Medium Devices, Medium Screens */
 @media only screen and (max-width: 992px) {
 	.slideshow, 
 	.slideshow-test {
@@ -507,6 +508,13 @@ screen and (min-device-pixel-ratio: 1.5)*/
 	.tile img {
   		transform: translateX(-8%);
   	}
+}
+
+/* Portrait Mode */
+@media only screen and (orientation: portrait) {
+	.tile {
+		height: 20vh;
+	}
 }
 
 /* Small Devices, Tablets */
