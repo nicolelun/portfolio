@@ -41,8 +41,8 @@ $(document).ready(function() {
     current = $(location).attr('pathname').substr($(location).attr('pathname').lastIndexOf("/")+1); // get current page: just last part - page name and extension
     if ($.inArray(current, caseList) !== -1) { //check if it is in array
         index = $.inArray(current, caseList);
-        console.log(current);
-        console.log(index);
+        // console.log(current);
+        // console.log(index);
     }
 
     //navigate through pages...
