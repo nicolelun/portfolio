@@ -427,8 +427,10 @@ screen and (min-device-pixel-ratio: 1.5)*/
 		height: 667px;
   	}
 	.tile img {
-		width: 400px;
-		height: 267px;
+		/*width: 400px;
+		height: 267px;*/
+		width: 600px;
+		height: 533px;
 		transform: none;
 	}
 }
