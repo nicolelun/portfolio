@@ -416,9 +416,11 @@ button.prev {
 screen and (-webkit-min-device-pixel-ratio: 1.5),
 screen and (-moz-min-device-pixel-ratio: 1.5),
 screen and (min-device-pixel-ratio: 1.5)*/ 
-/*@media only screen and (min-device-pixel-ratio: 2) and (min-width: 1441px), 
-    only screen and (min-resolution: 192dpi) and (min-width: 1441px)*/
-@media only screen and (min-width: 1441px) {
+/*@media only screen and (min-width: 1441px)*/
+/*@media only screen and (min-device-pixel-ratio: 2), 
+    only screen and (min-resolution: 192dpi)*/
+@media only screen and (min-device-pixel-ratio: 2)
+    and (min-width: 1441px) {
 	.slideshow, 
 	.slideshow-test {
 		max-width: 1000px;
