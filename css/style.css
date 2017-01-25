@@ -419,8 +419,7 @@ screen and (min-device-pixel-ratio: 1.5)*/
 /*@media only screen and (min-width: 1441px)*/
 /*@media only screen and (min-device-pixel-ratio: 2), 
     only screen and (min-resolution: 192dpi)*/
-@media only screen and (min-device-pixel-ratio: 2)
-    and (min-width: 1441px) {
+@media only screen and (min-device-pixel-ratio: 1.5) and (min-width: 1441px) {
 	.slideshow, 
 	.slideshow-test {
 		max-width: 1000px;
@@ -430,10 +429,10 @@ screen and (min-device-pixel-ratio: 1.5)*/
 		height: 667px;
   	}
 	.tile img {
-		/*width: 400px;
-		height: 267px;*/
-		width: 600px;
-		height: 533px;
+		width: 400px;
+		height: 267px;
+		/*width: 600px;
+		height: 533px;*/
 		transform: none;
 	}
 }
