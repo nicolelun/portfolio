@@ -411,7 +411,7 @@ button.prev {
 /*==========  Mediq Queries  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 2881px) {
+@media only screen and (min-width : 1441px) {
 	.slideshow, 
 	.slideshow-test {
 		max-width: 1000px;
@@ -429,7 +429,7 @@ button.prev {
 	}
 }
 
-@media only screen and (max-width : 2880px) {
+@media only screen and (max-width : 1440px) {
 	.slideshow img, .slide-test img {
 	  	width: 800px;
 		height: 533px;
