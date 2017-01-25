@@ -15,9 +15,9 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/filter.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/main.js"></script> -->
 
 </head>
 <body>
@@ -71,10 +71,10 @@
 				Examples: &#8220;Legend has it that Ethiopian shephards discovered _____ over 2,000 years ago when they noticed their goats &#8216;dancing&#8217; with energy after eating wild _____ cherries.&#8221; &#8220;_____ trees can grow up to 30 feet tall. Today, they are cultivated to about 10 feet tall for easier harvesting.&#8221; &#8220;&#8216;_____ is a way of stealing time that should by rights belong to your older self&#8217; - Terry Pratchett, <i>Thud!</i>&#8221;. (What is this issue about? Coffee.) 
 			</p> -->
 			<hr>
-			<p>
+			<!-- <p>
 				<button class="w3-btn grey-text w3-hover-none w3-hover-text-orange prev">&#10094; Previous</button>
 				<button class="w3-btn grey-text w3-hover-none w3-hover-text-orange w3-right next">Next &#10095;</button>
-			</p>
+			</p> -->
 		</div>
 		<div class="w3-col l9 m12 s12 buffered-container proj-gallery">
 			<div class="w3-row">
@@ -92,8 +92,18 @@
 	</div>
 
 	<div class="w3-row buffered-container" id="footer">
-		<button class="w3-btn grey-text w3-hover-none w3-hover-text-orange top">Back to Top</button>
+		<div class="w3-row">
+			<button class="w3-btn grey-text w3-hover-none w3-hover-text-orange prev">&larr; Previous</button>
+			<button class="w3-btn grey-text w3-hover-none w3-hover-text-orange w3-right next">Next &rarr;</button>
+		</div>
+		<!-- <div class="w3-row">
+			<button class="w3-btn grey-text w3-hover-none w3-hover-text-orange w3-right top">Top &uarr;</button>
+		</div> -->
 	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/filter.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>
