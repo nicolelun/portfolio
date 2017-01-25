@@ -215,7 +215,7 @@ button.prev {
 	position: relative;
 	height: 25%;
 	min-height: 200px;	
-	max-height: 200px;
+	max-height: 300px;
 	cursor: pointer;
 	overflow: hidden;
 	border: 1px solid black;
@@ -411,7 +411,18 @@ button.prev {
 /*==========  Non-Mobile First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 993px) {
+@media only screen and (min-width : 2881px) {
+	.slideshow img, .slide-test img {
+	  	width: 1000px;
+		height: 667px;
+  	}
+	.tile img {
+		width: 500px;
+		height: 333px;
+	}
+}
+
+@media only screen and (max-width : 2880px) {
 	.slideshow img, .slide-test img {
 	  	width: 800px;
 		height: 533px;
