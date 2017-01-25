@@ -70,6 +70,10 @@ hr {
 	/*padding-bottom: 16px;*/
 }
 
+.buffered-top-medium {
+	padding-top: 16px;
+}
+
 .buffered-top-large {
 	padding-top: 32px;
 }
@@ -408,6 +412,20 @@ button.prev {
 	margin-bottom: 0px;
 }
 
+/* SOUND */
+
+.sound-cover {
+	margin: 0 auto;
+	width: 500px;
+}
+
+.sound-cover img {
+	width: 500px;
+	height: 500px;
+	object-fit: cover;
+	display: block;
+}
+
 /*==========  Mediq Queries  ==========*/
 
 /* Large Devices, Wide Screens */
@@ -420,6 +438,11 @@ screen and (min-device-pixel-ratio: 1.5)*/
 /*@media only screen and (min-device-pixel-ratio: 2), 
     only screen and (min-resolution: 192dpi)*/
 @media only screen and (min-resolution: 192dpi) and (min-width: 1441px) {
+	.buffered-container,
+	.buffered-sides {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
 	.slideshow, 
 	.slideshow-test {
 		/*max-width: 1000px;*/
@@ -504,16 +527,10 @@ screen and (min-device-pixel-ratio: 1.5)*/
   	}
 }
 
-/*==========  End Non-Mobile First Method  ==========*/
+/*==========  End Media Queries ==========*/
 
-/* SOUND */
 
-.sound-cover {
-	width: 300px;
-	height: 300px;
-	object-fit: cover;
-	display: block;
-}
+
 
 
 
