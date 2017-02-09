@@ -24,6 +24,7 @@ $(document).ready(function() {
     'labyrinth.html',
     'triptych.html',
     // 'lawndale.html',
+    'bags.html',
     'siphon.html',
     'meal.html',
     'box.html',
