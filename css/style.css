@@ -38,7 +38,16 @@ h2 {
 
 a {
 	text-decoration: none;
-	color: rgba(31,232,255,0.6);
+	/*color: rgba(31,232,255,0.3);*/
+	color: #F1F1F1;
+	transition: 0.15s;
+	-webkit-transition: 0.1s;
+}
+
+a:hover {
+	/*color: #9e9e9e;*/
+	/*color: rgba(31,232,255,0.6);*/
+	color: #FF9800;
 }
 
 hr {
@@ -153,6 +162,11 @@ hr {
 	font-family: 'Fredoka One', cursive;
 	font-family: 'FredokaOne-Regular', sans-serif;
 	vertical-align: top;
+	transition: 0.15s;
+}
+
+#identity:hover {
+	opacity: 0.8;
 }
 
 #main-nav {
