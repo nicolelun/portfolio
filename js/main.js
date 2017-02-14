@@ -12,7 +12,6 @@ function screenWidth() {
 
 $(document).ready(function() {
     var caseList = [
-    'desk.html',
     'window.html',
     'light-installation.html',
     'globe.html',
@@ -21,6 +20,7 @@ $(document).ready(function() {
     'look.html',
     'dump.html',
     'odyssey.html',
+    'desk.html',
     'labyrinth.html',
     'triptych.html',
     // 'lawndale.html',
