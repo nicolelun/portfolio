@@ -13,8 +13,8 @@ body {
 	padding: 0;
 	background-color: rgba(48,48,48,1);
 	font-family: "Muli", sans-serif;
+	font-weight: 400;
 	color: #9e9e9e;
-	/*font-weight: 300;*/
 }
 
 header {
@@ -24,6 +24,7 @@ header {
 
 h1 {
 	font-family: "Muli", sans-serif;
+	font-weight: 400;
 	font-size: 26px;
 	color: rgba(31,232,255,0.8);
 	margin-top: 0;
@@ -31,6 +32,7 @@ h1 {
 
 h2 {
 	font-family: "Muli", sans-serif;
+	font-weight: 400;
 	font-size: 16px;
 	/*color: rgba(31,232,255,0.6);*/
 	margin-top: 0;
@@ -54,6 +56,12 @@ hr {
 	border-top: 1px solid rgba(31,232,255,0.3);
 	margin-top: 0;
 	margin-bottom: 0;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .centered-container {
@@ -150,6 +158,13 @@ hr {
 
 /* NAVIGATION and FILTER */
 
+.index header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
 #nav-container {
 	background-color: rgba(48,48,48,1);
 	border: 1px solid rgba(48,48,48,1);
@@ -157,16 +172,16 @@ hr {
 }
 
 #identity {
-	width: 250px; 
+	width: 350px; 
 	font-size: 34px; 
-	font-family: 'Fredoka One', cursive;
 	font-family: 'FredokaOne-Regular', sans-serif;
+	font-weight: normal;
 	vertical-align: top;
 	transition: 0.15s;
 }
 
 #identity:hover {
-	opacity: 0.8;
+	/*opacity: 0.8;*/
 }
 
 #main-nav {
@@ -211,7 +226,7 @@ button.prev {
 button.top,
 button.next,
 button.prev {
-	/*font-weight: 300;*/
+	font-weight: 300;
 	text-transform: lowercase;
 }
 
@@ -238,12 +253,8 @@ button.prev {
 .tile img {
 	position: absolute;
 	object-fit: cover;
-	/*object-fit: scale-down;*/
-	/*width: 400px;
-	height: auto;*/
 	width: 300px;
 	height: 200px;
-	/*transform: translate(-17%, 0);*/
 	z-index: -1;
 	transition: filter 1s linear;
 }
@@ -263,6 +274,7 @@ button.prev {
 	background-color: rgba(0,0,0,0.7);
 	visibility: hidden;
 	font-family: "Muli", sans-serif;
+	font-weight: 300;
 	/*transition: all .3s linear; */
 }
 
@@ -275,6 +287,7 @@ button.prev {
 	text-transform: lowercase;
 	margin: 0;
 	padding: 0;
+	font-family: "Muli", sans-serif;
 	font-weight: 300;
 }
 
@@ -283,21 +296,21 @@ button.prev {
 }
 
 .tint {
-  position: relative;
-  float: left;
-  cursor: pointer;
+	/*position: relative;*/
+	float: left;
+	cursor: pointer;
 }
 
 .tint:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(31,232,255,0.6);
-  transition: all .3s linear;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(31,232,255,0.6);
+	transition: all .3s linear;
 }
 
 .tint:hover:before { 

@@ -3,6 +3,14 @@ var activeClass = "none";
 var allProj = document.querySelectorAll(".tile");
 var filters = [
     {
+        btnId: "#installation-btn",
+        tileClass: ".installation",
+    },
+    {
+        btnId: "#installation-btn-s",
+        tileClass: ".installation",
+    },
+    {
         btnId: "#video-btn",
         tileClass: ".video",
     },
