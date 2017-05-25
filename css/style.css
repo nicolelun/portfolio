@@ -347,8 +347,13 @@ button.prev {
 .proj-gallery img {
 	margin: auto;
 	width: 100%;
+	max-width: 800px;
 	padding: 3px;
 	display: block;
+}
+
+img.thumbnail {
+	cursor: pointer;
 }
 
 /* SLIDESHOW */
@@ -369,6 +374,12 @@ button.prev {
 	text-align: center;
 }
 
+.slideshow img {
+	width: 100%;
+	height: auto;
+	border: none;
+}
+
 .slideshow .hide-slide {
 	display: none;
 }
@@ -381,6 +392,8 @@ button.prev {
 	padding: 16px;
 }
 
+.prevproject, 
+.nextproject,
 .slideshow .prev,
 .slideshow .next {
 	cursor: pointer;
@@ -402,6 +415,20 @@ button.prev {
 	z-index: 100;
 }
 
+.prevproject,
+.nextproject {
+	position: fixed; 
+	top: auto;
+	bottom: 0;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	z-index: 1;
+}
+
+.nextproject {
+	right: 0;
+}
+
 .slideshow .prev {
 	left: 0;
 }
@@ -411,9 +438,21 @@ button.prev {
 	/*border-radius: 3px 0 0 3px;*/
 }
 
+.close-modal {
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.4)!important;
+	z-index: 100; 
+}
+
+.prevproject:hover,
+.nextproject:hover, 
 .slideshow .prev:hover,
-.slideshow .next:hover {
-	background-color: rgba(0, 0, 0, 0.8);
+.slideshow .next:hover,
+.close-modal:hover {
+	color: white!important;
+	background-color: rgba(0, 0, 0, 0.8)!important;
 }
 
 .slideshow .caption {
@@ -466,6 +505,7 @@ screen and (min-device-pixel-ratio: 1.5)*/
 		padding-left: 32px;
 		padding-right: 32px;
 	}
+
 	.slideshow {
 		/*max-width: 1000px;*/
 		max-width: 1600px;

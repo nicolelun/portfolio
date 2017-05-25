@@ -106,7 +106,12 @@ function toggleFilter(btnId, tileClass) {
 
     	// scroll down to the first tile for the current button
 		var offset = $(tileClass).offset();
-		var newOffset = offset.top - 122;
+		var newOffset;
+        if (offset) {
+            newOffset = offset.top - 122;
+        } else {
+            newOffset = 122;
+        }
 
 	    $('html, body').animate({
 	        scrollTop: newOffset
@@ -179,7 +184,7 @@ $(document).ready(function(){
 
         // Find ID of clicked button
         var btnId = "#" + $(this).attr("id");
-        // console.log("this ID: " + btnId);
+        console.log("this ID: " + btnId);
 
         // Find tile class associated with ID of clicked button
         for (var i = 0; i < filters.length; i++) {
