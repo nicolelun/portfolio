@@ -184,7 +184,7 @@ $(document).ready(function(){
 
         // Find ID of clicked button
         var btnId = "#" + $(this).attr("id");
-        console.log("this ID: " + btnId);
+        // console.log("this ID: " + btnId);
 
         // Find tile class associated with ID of clicked button
         for (var i = 0; i < filters.length; i++) {

@@ -1,0 +1,111 @@
+.banner {
+	background-attachment: fixed;
+	font-family: Lato, Gotham, sans-serif;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	color: white;
+}
+
+#name, #studio, #scroll {
+	width: 100%;
+	z-index: 2;
+}
+
+#first-name {
+	display: inline-block; 
+	padding-right: 1em; 
+	text-align: right;
+}
+
+#last-name {
+	display: inline-block; 
+	padding-left: 1em; 
+	text-align: left;
+}
+
+#scroll {
+	position: absolute;
+	bottom: 20%;
+	font-family: Courgette, cursive;
+	font-size: 20px;
+	color: rgba(31,232,255,0.6);
+	animation: fade-in 1s 5s both;
+}
+
+@keyframes fade-in {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.letter-name,
+.letter-studio {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: white;
+	opacity: 1;
+	transform: translateY(-50%);
+}
+
+.letter-name {
+	font-size: 65px;
+	letter-spacing: 0.15em;
+	top: -1.5em;
+	animation: 
+		bounce-letter 1.5s 2 alternate ease forwards, 
+		drop-letter 0.5s ease-in, 
+		sparkle 2s 2s ease backwards;
+}
+
+.letter-studio {
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 1.5em;
+	animation: 
+		bounce-letter 1.5s 2 alternate ease forwards, 
+		drop-letter 0.5s ease-in backwards, 
+		sparkle 4s ease both;
+}
+
+/*.letter-name:hover,
+.letter-studio:hover {
+	opacity: 0.5;
+	transition: 0.2s;
+	cursor: pointer;
+}*/
+
+@keyframes sparkle {
+	0% { color: #B4B7B7  }
+	30% { color: #222222; }
+	90% { color: white; }
+	100% { color: #B4B7B7; }
+}
+
+@keyframes drop-letter {
+	0% { top: -100px; }
+	100% { top: 45vh; }
+}
+
+@keyframes bounce-letter {
+	0% { top: 45vh }
+	100% { top: 30vh; }
+}
+
+.wave {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(31,232,255,0.6);
+	/*background: lightgray;*/
+	animation: swell 3.75s 2.5s ease both;
+}
+
+@keyframes swell {
+	0% { height: 85vh; }
+	100% { height: 10vh; }
+}
+
+

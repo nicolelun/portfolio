@@ -1,7 +1,64 @@
+/* ===================================================
+	FONTS
+=================================================== */
+
+/*@font-face {
+    font-family: Gotham;
+    src: url(../fonts/HCo_Gotham_Bundle/Gotham-Book.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Gotham;
+    src: url(../fonts/HCo_Gotham_Bundle/Gotham-BookItalic.otf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: Gotham-Medium;
+	src: url(../fonts/HCo_Gotham_Bundle/Gotham-Medium.otf);
+	font-weight: 400;
+	font-style: normal;
+}*/
+
+@font-face {
+	font-family: Gotham;
+	src: url(../fonts/HCo_Gotham_Bundle/Gotham-Bold.otf);
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Lato;
+	src: url(../fonts/Lato/Lato-Light.ttf);
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Lato;
+	src: url(../fonts/Lato/Lato-Regular.ttf);
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Lato;
+	src: url(../fonts/Lato/Lato-Bold.ttf);
+	font-weight: 700;
+	font-style: normal;
+}
+
 @font-face {
     font-family: "FredokaOne-Regular";
     src: url(../fonts/FredokaOne-Regular.ttf) format("truetype");
 }
+
+/* ===================================================
+	GENERAL
+=================================================== */
 
 * {
 	box-sizing: border-box;
@@ -159,7 +216,7 @@ hr {
 /* NAVIGATION and FILTER */
 
 .index header {
-	position: fixed;
+	/*position: fixed;*/
 	top: 0;
 	width: 100%;
 	z-index: 1;

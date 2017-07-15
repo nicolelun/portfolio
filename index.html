@@ -5,36 +5,34 @@
 	<title>Nicole Lun</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<script src="js/w3.js"></script>
-	<!-- <script src="https://www.w3schools.com/lib/w3.js"></script> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,700" rel="stylesheet"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 
-	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
-
-	<!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
-	<link rel="stylesheet" href="css/w3.css">
+	<!-- <link rel="stylesheet" href="css/w3.css"> -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/landing.css">
 
 </head>
+
 <body class="index">
 
-	<header>
-		<div w3-include-html="includes/navbar.html"></div>
-	</header>
+	<section class="banner" id="parallax-bg1">
+		<a class="site-email" href="mailto:nicole.lun@gmail.com">
+			<div id="name">
+				<span id="first-name"></span>
+				<span id="last-name"></span>
+			</div>
+		</a>
+		<div id="studio"></div>
+		<div class="wave"></div>
+		<div id="scroll">Coming Soon</div>
+	</section>
 
-	<div class="w3-row w3-hide-small" id="buffer-large"></div>
-	<div class="w3-row w3-hide-large w3-hide-medium" id="buffer-small"></div>
-	<!-- <div style="min-height: 300px"></div> -->
-
-	<div class="w3-row">
-		<!-- <div class="w3-col l2 m3 s6 tile print" id="receipts">
-			<div class="tile-header">Receipts: 1830 to 1865</div>
-			<img class="grayscale" src="">
-		</div> -->
+<!-- 	<div class="w3-row" id="parallax-bg2">
 		<a href="mcs.html">
 			<div class="w3-col l2 m3 s6 tile tint web branding" id="mcs">
 				<div class="tile-header">MCS<br><span class="medium">Web</span></div>
-				<!-- <img class="grayscale" style="transform: translate(-5%, 0%);" src="images/mcs/MCS-Website_Page-1_800x533.jpg"> -->
 				<img class="grayscale" src="images/mcs/MCS-Website_Page-1_726x484.jpg">
 			</div>
 		</a>
@@ -92,12 +90,6 @@
 				<img class="grayscale" src="images/triptych/Virgin-Mary-Head_500x333.jpg">
 			</div>
 		</a>
-		<!-- <a href="lawndale.html">
-			<div class="w3-col l2 m3 s6 tile tint photo" id="lawndale">
-				<div class="tile-header">North Lawndale<br><span class="medium">Photo</span></div>
-				<img class="grayscale" src="images/lawndale/IMG_1469_800x533.jpg">
-			</div>
-		</a> -->
 		<a href="siphon.html">
 			<div class="w3-col l2 m3 s6 tile tint print" id="siphon">
 				<div class="tile-header">Siphon<br><span class="medium">Publication</span></div>
@@ -125,21 +117,18 @@
 		<a href="wagashi.html">
 			<div class="w3-col l2 m3 s6 tile tint package print other" id="wagashi">
 				<div class="tile-header">Wagashi<br><span class="medium">Package</span></div>
-				<!-- <img class="grayscale" style="transform: translate(-17%, -10%);" src="images/wagashi/IMG_2050_800x533.jpg"> -->
 				<img class="grayscale" src="images/wagashi/IMG_2050_800x533.jpg">
 			</div>
 		</a>
 		<a href="bottle.html">
 			<div class="w3-col l2 m3 s6 tile tint package other" id="bottle">
 				<div class="tile-header">Bottle<br><span class="medium">Package</span></div>
-				<!-- <img class="grayscale" style="transform: translate(-17%, -15%);" src="images/bottle/IMG_1872_800x640.jpg"> -->
 				<img class="grayscale" src="images/bottle/IMG_1872_800x640.jpg">
 			</div>
 		</a>
 		<a href="box.html">
 			<div class="w3-col l2 m3 s6 tile tint package other" id="box">
 				<div class="tile-header">Unity Box<br><span class="medium">Package</span></div>
-				<!-- <img class="grayscale" style="transform: translate(-17%, -5%);" src="images/box/IMG_1715_800x533_PureWhite.jpg"> -->
 				<img class="grayscale" src="images/box/IMG_1715_800x533_PureWhite.jpg">
 			</div>
 		</a>
@@ -159,23 +148,15 @@
 		<a href="yangtze.html">
 			<div class="w3-col l2 m3 s6 tile tint photo" id="yangtze">
 				<div class="tile-header">Yangtze River<br><span class="medium">Photo</span></div>
-				<!-- <img class="grayscale" style="transform: translate(-25%, -15%);" src="images/yangtze/IMG_6556_500x333.jpg"> -->
 				<img class="grayscale" src="images/yangtze/IMG_6556_500x333.jpg">
 			</div>
 		</a>
 		<a href="landscape.html">
 			<div class="w3-col l2 m3 s6 tile tint photo" id="landscape">
 				<div class="tile-header">Our Land<br><span class="medium">Photo</span></div>
-				<!-- <img class="grayscale" src="images/alaska/DSCN2412_Upright_800x533.jpg"> -->
 				<img class="grayscale" src="images/alaska/DSCN2183_800x534.jpg">
 			</div>
 		</a>
-		<!-- <a href="still.html">
-			<div class="w3-col l2 m3 s6 tile tint photo" id="still">
-				<div class="tile-header">Still Life<br><span class="medium">Photo</span></div>
-				<img class="grayscale" src="images/still/IMG_2519_500x333.jpg">
-			</div>
-		</a> -->
 		<a href="abstract.html">
 			<div class="w3-col l2 m3 s6 tile tint photo" id="abstract">
 				<div class="tile-header">Abstract<br><span class="medium">Photo</span></div>
@@ -194,27 +175,18 @@
 				<img class="grayscale" src="images/odyssey/IMG_9995_800x533.jpg">
 			</div>
 		</a>
-		<!-- <a href="grandparents.html">
-			<div class="w3-col l2 m3 s6 tile tint print" id="grandparents">
-				<div class="tile-header">Grandparents<br><span class="medium">Print</span></div>
-				<img class="grayscale" src="images/grandparents/Mah-Mah_Cropped_800x533.jpg">
-			</div>
-		</a> -->
-		<!-- <a href="prince.html">
-			<div class="w3-col l2 m3 s6 tile tint print" id="prince">
-				<div class="tile-header">Prince<br><span class="medium">Print</span></div>
-				<img class="grayscale" src="images/prince/IMG_0892_800x533_80.jpg">
-			</div>
-		</a> -->
+	</div> -->
 
-	</div>
-
-	<script>
-		w3.includeHTML();
-	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/filter.js"></script>
-	<script src="js/main.js"></script>
+	<!-- <script src="js/filter.js"></script> -->
+	<!-- <script src="js/main.js"></script> -->
+	<!-- <script>
+		$("#main-header").load("navbar.html");
+	</script> -->
+	<script src="js/helper-code.js"></script>
+	<script src="js/landing.js"></script>
+	<!-- <script src="js/modernizr.custom.37797.js"></script>  -->
+	<!-- <script src="js/parallax.js"></script> -->
 	
 </body>
 </html>
