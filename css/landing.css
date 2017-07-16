@@ -40,7 +40,7 @@
 .letter-name:hover,
 .letter-studio:hover,
 #plus:hover {
-	transform: translateY(-50%) scaleY(0.9) scaleX(1.1);
+	transform: translateY(-50%) scaleY(0.8) scaleX(1.1);
 }
 
 .letter-name {
@@ -84,9 +84,17 @@
 	bottom: 20%;
 	font-family: 'Courgette', cursive;
 	font-size: 25px;
+}
+
+a.site-email {
 	color: rgba(31,232,255,1);
 	animation: fade-in 1s 6s both;
 }
+
+a.site-email:hover {
+	text-decoration: underline!important;
+}
+
 @keyframes fade-in {
 	0% { opacity: 0; }
 	100% { opacity: 1; }
