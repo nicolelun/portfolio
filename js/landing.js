@@ -22,7 +22,7 @@ for (var i = 0; i < lastNameLetters.length; i += 1) {
 	var letter = document.createElement("span");
 	letter.textContent = lastNameLetters[i];
 	letter.className = "letter-name";
-	letter.style.animationDelay = 1 + (randNum(0, 0.2) * i) + "s";
+	letter.style.animationDelay = 0.5 + (randNum(0, 0.2) * i) + "s";
 	
 	lastName.appendChild(letter);
 }
@@ -32,8 +32,14 @@ for (var i = 0; i < studioLetters.length; i += 1) {
 	var letter = document.createElement("span");
 	letter.textContent = studioLetters[i];
 	letter.className = "letter-studio";
-	letter.style.animationDelay = 1 + (randNum(0, 0.2) * i) + "s";
+	letter.style.animationDelay = 0.5 + (randNum(0, 0.2) * i) + "s";
 	
 	studio.appendChild(letter);
 }
+
+var plus = document.createElement("i");
+plus.className = "fa fa-plus";
+plus.id = "plus";
+plus.style.animationDelay = 0.5 + (randNum(0, 0.2) * i) + "s";
+studio.appendChild(plus);
 

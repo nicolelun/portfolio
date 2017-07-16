@@ -24,36 +24,30 @@
 	text-align: left;
 }
 
-#scroll {
-	position: absolute;
-	bottom: 20%;
-	font-family: Courgette, cursive;
-	font-size: 20px;
-	color: rgba(31,232,255,0.6);
-	animation: fade-in 1s 5s both;
-}
-
-@keyframes fade-in {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
-}
-
 .letter-name,
-.letter-studio {
+.letter-studio,
+#plus {
 	display: inline-block;
 	position: relative;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 700;
-	color: white;
 	opacity: 1;
 	transform: translateY(-50%);
+	transition: all 0.2s ease;
+}
+
+.letter-name:hover,
+.letter-studio:hover,
+#plus:hover {
+	transform: translateY(-50%) scaleY(0.9) scaleX(1.1);
 }
 
 .letter-name {
+	top: -1.5em;
 	font-size: 65px;
 	letter-spacing: 0.15em;
-	top: -1.5em;
+	color: white;
 	animation: 
 		bounce-letter 1.5s 2 alternate ease forwards, 
 		drop-letter 0.5s ease-in, 
@@ -64,18 +58,45 @@
 	font-size: 20px;
 	font-weight: 400;
 	letter-spacing: 1.5em;
+	color: white;
 	animation: 
 		bounce-letter 1.5s 2 alternate ease forwards, 
 		drop-letter 0.5s ease-in backwards, 
 		sparkle 4s ease both;
 }
 
-/*.letter-name:hover,
-.letter-studio:hover {
-	opacity: 0.5;
-	transition: 0.2s;
-	cursor: pointer;
-}*/
+#plus {
+	/*font-family: Courgette, cursive;*/
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	color: white;
+	color: rgba(31,232,255,1);
+	animation: 
+		bleed-in 6s ease forwards,
+		sparkle 4s ease,
+		bounce-letter 1.5s 2 alternate ease forwards, 
+		drop-letter 0.5s ease-in backwards;
+}
+
+#scroll {
+	position: absolute;
+	bottom: 20%;
+	font-family: 'Courgette', cursive;
+	font-size: 25px;
+	color: rgba(31,232,255,1);
+	animation: fade-in 1s 6s both;
+}
+@keyframes fade-in {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes bleed-in {
+	0% { color: #B4B7B7; }
+	70% { color: #B4B7B7; }
+	100% { color: rgba(31,232,255,1); }
+}
 
 @keyframes sparkle {
 	0% { color: #B4B7B7  }
